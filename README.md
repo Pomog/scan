@@ -73,6 +73,11 @@ nmap -sS 192.168.23.42 -T4
 
 - found an open port: 4223/tcp on 192.168.23.42
 ![image](https://github.com/user-attachments/assets/cd099ed5-2e2a-4581-86da-e475366dbb51)
+
+### 4.2 Service & Version Detection
+```bash
+nmap -sS -sV -p- -T4 192.168.56.XXX
+```
 ```
 Nmap scan report for 192.168.23.42
 Host is up (0.00020s latency).
@@ -86,10 +91,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 1388.52 seconds
 ```
 
-### 4.2 Service & Version Detection
-```bash
-nmap -sS -sV -p- -T4 192.168.56.XXX
-```
 ## 5. Step 3 — “Find a Way In”
 ![image](https://github.com/user-attachments/assets/eaa17001-496e-42c0-8ea2-7f0e67ebb270)
 
